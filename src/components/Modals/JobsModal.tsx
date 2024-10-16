@@ -1,4 +1,3 @@
-import { IMAGE_URL } from "@/lib/config/constant";
 import { useEffect } from "react";
 import React from "react";
 
@@ -17,7 +16,6 @@ const JobModal: React.FC<JobModalProps> = ({
   title,
   description,
   content,
-  thumbnail,
 }) => {
   useEffect(() => {
     if (show) {

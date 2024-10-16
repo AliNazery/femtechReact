@@ -1,4 +1,3 @@
-import React from 'react'
 import SectionMiddleTitle from '../Common/Title/SectionMiddleTitle';
 import { FormIconOne, FormIconTwo } from '../Common/Icons/ContactIcon/ContactIcon';
 

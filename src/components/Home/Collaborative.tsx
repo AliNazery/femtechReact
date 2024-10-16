@@ -1,5 +1,3 @@
-import Image from "next/image";
-import React from "react";
 import SectionTitleTwo from "../Common/Title/SectionTitleTwo";
 import { CollaborativeOneSvg, CollaborativeTwoSvg } from "../Common/svg";
 
@@ -10,7 +8,7 @@ export default function Collaborative() {
         <div className="flex flex-wrap gy-4 items-center -mx-3 -mt-6">
           <div data-aos="fade-left-sm" className="lg:w-7/12 order-2 px-3 mt-6">
             <div className="feature-clip-path-2 relative">
-              <Image
+              <img
                 alt="feature image"
                 loading="lazy"
                 width="727"

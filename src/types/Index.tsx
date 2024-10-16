@@ -42,3 +42,10 @@ export type SectionTitleType = {
   title: string;
   description: string;
 };
+
+
+export type JobType = {
+  title: string;
+  description: string;
+  location: string
+};

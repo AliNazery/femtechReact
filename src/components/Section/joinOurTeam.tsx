@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import SectionMiddleTitle from "../Common/Title/SectionMiddleTitle";
 import {
   AboutHourIcon,
@@ -11,6 +10,7 @@ import { useGetJobListQuery } from "@/lib/features/apiSlice";
 import { toast } from "react-toastify";
 import Loader from "../Common/Loader";
 import JobModal from "../Modals/JobsModal";
+import { JobType } from "@/types/Index";
 
 
 export default function JoinOurTeam() {
@@ -65,7 +65,7 @@ export default function JoinOurTeam() {
             {jobPositions.length === 0 ? (
               <p>No positions available at the moment.</p>
             ) : (
-              jobPositions.map((position, index) => (
+              jobPositions.map((position:JobType, index:number) => (
                 <div
                   key={index}
                   data-aos="fade-up-sm"

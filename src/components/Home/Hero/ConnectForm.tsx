@@ -1,5 +1,5 @@
 import { useStoreSubscriberMutation } from "@/lib/features/apiSlice";
-import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
+import { useState, ChangeEvent, FormEvent, useEffect } from "react";
 
 
 type SubscriberPayload = {
@@ -9,7 +9,7 @@ type SubscriberPayload = {
 export default function ConnectForm() {
   const [email, setEmail] = useState<string>("");
   const [showSuccessMessage, setShowSuccessMessage] = useState<boolean>(false);
-  const [storeSubscriber, { isLoading, isError, error }] =
+  const [storeSubscriber, { isLoading, isError}] =
     useStoreSubscriberMutation();
 
   // Handle form submission

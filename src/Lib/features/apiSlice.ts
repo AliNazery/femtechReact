@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { token } from "@/lib/config/constant";
 
 // const apiUrl = "http://127.0.0.1:8000";
 const apiUrl = "https://femstech.wamasolution.com/api/public";

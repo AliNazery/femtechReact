@@ -1,17 +1,14 @@
-"use client";
-
-import React from "react";
-import Image from "next/image";
 import { useGetSignleStudyHubQuery } from "@/lib/features/apiSlice"; // Ensure correct import path
 import PageHeader from "@/components/Common/PageHeader/PageHeader";
-import toast from "react-hot-toast";
 import Loader from "@/components/Common/Loader";
 import { BASE_URL } from "@/lib/config/constant";
+import { toast } from "react-toastify";
+import { useParams } from "react-router-dom";
 
 
 
-export default function StudyHubDetail({ studyId }) {
-  const { id } = studyId;
+export default function StudyHubDetail() {
+  const { id } = useParams();
 
   const { data, error, isLoading } = useGetSignleStudyHubQuery(id);
 
@@ -39,7 +36,7 @@ export default function StudyHubDetail({ studyId }) {
           <div className="bg-[#F4FDFF] shadow-lg rounded-xl p-8 md:p-12 flex flex-col md:flex-row gap-8">
             {/* Image Section */}
             <div className="flex-shrink-0 w-full md:w-1/3">
-              <Image
+              <img
                 src={BASE_URL + hub.thumbnail || "/default-thumbnail.jpg"}
                 alt={hub.title}
                 width={400}

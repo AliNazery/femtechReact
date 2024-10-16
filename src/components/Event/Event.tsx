@@ -7,6 +7,18 @@ import EventModal from "../Modals/EventsModal";
 
 const BaseURL = "https://femstech.wamasolution.com/public";
 
+interface EventData {
+  title: string;
+  description: string;
+  content: string;
+  date: string;
+  time: string;
+  location: string;
+  deadline: string;
+  thumbnail: string;
+}
+
+
 const Event = ({ page_num = 1 }) => {
   const pageSize = 3;
   const { data, isError, isLoading } = useGetEventListQuery({
@@ -17,7 +29,7 @@ const Event = ({ page_num = 1 }) => {
   });
 
   const [showModal, setShowModal] = useState(false);
-  const [selectedEvent, setSelectedEvent] = useState(null);
+  const [selectedEvent, setSelectedEvent] = useState<EventData | null>(null);
 
   const openModal = (event:any) => {
     setSelectedEvent(event);

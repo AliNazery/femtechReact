@@ -4,7 +4,7 @@ import Pagination from "../Common/Pagination";
 import { IMAGE_URL } from "@/lib/config/constant";
 
 
-export default function PodcastCard({ page_num = 1 }) {
+export default function PodcastCard({ }) {
   const currentPage = 1;
   const lastPage = 1;
 

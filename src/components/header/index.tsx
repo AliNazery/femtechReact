@@ -184,7 +184,7 @@ const Header: React.FC = () => {
                 >
                   <Link
                     className="nav-link lg:pl-0 pointer select-none lg:py-4 xl:pr-6"
-                    to={navItem.href}
+                    to={navItem.href || "/default-route"}
                   >
                     {navItem.label}
                   </Link>
