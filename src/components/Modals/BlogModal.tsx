@@ -35,7 +35,7 @@ const StudyHubModal: React.FC<StudyHubModalProps> = ({
 
   if (!show) return null;
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[999]">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
       <div className="bg-white rounded-lg p-8 w-full max-w-7xl h-[90%] relative overflow-auto">
         <button
           onClick={onClose}

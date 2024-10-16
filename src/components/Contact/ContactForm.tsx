@@ -1,14 +1,10 @@
-"use client"
-
-// src/components/ContactForm.tsx
-import React from "react";
 import { useForm, FieldValues } from 'react-hook-form';
-import { useSubmitContactFormMutation } from "@/lib/features/apiSlice";
 import {
   FormIconOne,
   FormIconTwo,
 } from "@/components/Common/Icons/ContactIcon/ContactIcon";
 import ContactEmail from "@/components/Contact/ContactEmail";
+import { useSubmitContactFormMutation } from '@/Lib/features/apiSlice';
 
 export default function ContactForm() {
   const {
@@ -53,7 +49,7 @@ export default function ContactForm() {
                       </label>
                       <input
                         type="text"
-                        className="w-full rounded-lg border border-opacity-100 border-gray-300 px-5 py-5 sm  q:py-4"
+                        className="w-full rounded-lg border border-opacity-100 border-gray-300 px-5 py-5 sm:py-4"
                         placeholder="Your Name"
                         id="name"
                         {...register("name", { required: true })}

@@ -8,6 +8,14 @@ import { Link } from "react-router-dom";
 import { IMAGE_URL } from "@/Lib/config/constant";
 
 
+type PostType = {
+  id: number;
+  thumbnail: string;
+  title: string;
+  user_id: number;
+  created_at: string
+};
+
 export default function BlogCard({ page_num = 1 }) {
   // Fetch the blog data using RTK Query
   const { data, error, isLoading } = useGetBlogListQuery({ page_num });
@@ -39,7 +47,7 @@ export default function BlogCard({ page_num = 1 }) {
   return (
     <>
       <div className="row gy-4 -mt-6">
-        {blogPosts.map((post) => (
+        {blogPosts.map((post: PostType) => (
           <div
             key={post.id}
             data-aos="fade-up-sm"
@@ -59,7 +67,6 @@ export default function BlogCard({ page_num = 1 }) {
                   data-nimg="1"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   src={`${post.thumbnail}`}
-             
                 />
               </div>
               <div className="px-5 pb-12">
@@ -78,7 +85,7 @@ export default function BlogCard({ page_num = 1 }) {
                       data-nimg="1"
                       className="h-[40px] w-[40px] object-cover"
                       src={`${IMAGE_URL}/images/author/1.jpg`}
-                                          />
+                    />
                   </Link>
                   <Link
                     className="relative z-10 -ml-3 rounded-r-3xl bg-theme-light py-1 pl-6 pr-3 font-primary text-[15px] capitalize text-dark transition-colors hover:text-opacity-70"
@@ -117,7 +124,8 @@ export default function BlogCard({ page_num = 1 }) {
           title={selectedPost.title}
           description={selectedPost.description}
           content={selectedPost.content}
-          thumbnail={selectedPost.thumbnail} />
+          thumbnail={selectedPost.thumbnail}
+        />
       )}
     </>
   );

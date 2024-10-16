@@ -1,5 +1,6 @@
 import About from "@/pages/about/page";
 import Blog from "@/pages/blog/page";
+import Contact from "@/pages/contact/page";
 import EmpowerChats from "@/pages/empowerchat/page";
 import Events from "@/pages/events/page";
 import HomePage from "@/pages/HomePage/HomePage";
@@ -31,68 +32,73 @@ export const routes: TRoute[] = [
     element: <HomePage />,
   },
   {
-      id: 3,
+    id: 2,
     path: "/events",
     element: <Events />,
   },
   {
-    id: 4,
+    id: 3,
     path: "/studyhub",
     element: <StudyHub />,
-},
-{
-    id: 5,
+  },
+  {
+    id: 4,
     path: "/empowerchat",
     element: <EmpowerChats />,
   },
   {
-    id: 6,
+    id: 5,
     path: "/podcast",
     element: <Podcast />,
   },
   {
-    id: 7,
+    id: 6,
     path: "/nomination",
     element: <Nomination />,
-},
-{
+  },
+  {
     id: 7,
     path: "/membership",
     element: <Membership />,
-},
-{
+  },
+  {
     id: 8,
     path: "/speakers",
     element: <Speaders />,
-},
-{
+  },
+  {
     id: 9,
     path: "/job",
-    element: <Job/>,
-},
-{
+    element: <Job />,
+  },
+  {
     id: 10,
     path: "/scholarship",
-    element: <ScholarshipPage/> ,
-},
-{
+    element: <ScholarshipPage />,
+  },
+  {
     id: 11,
     path: "/blog",
-    element: <Blog/>,
-},
-{
+    element: <Blog />,
+  },
+  {
     id: 12,
     path: "/story",
-    element:<Story/>,
-},
-{
+    element: <Story />,
+  },
+  {
     id: 13,
     path: "/programs",
-    element: <Programs/>,
-},
-{
-  id: 2,
-  path: "/about",
-  element: <About />,
-},
+    element: <Programs />,
+  },
+  {
+    id: 14,
+    path: "/about",
+    element: <About />,
+  },
+  {
+    id: 15,
+    path: "/contact",
+    element: <Contact />,
+  },
 ];

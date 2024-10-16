@@ -88,6 +88,7 @@ export default {
         merriweather: ["Merriweather", "sans-serif"],
         pre: ["monospace", "monospace"],
         sans: [
+          'Inter',
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
