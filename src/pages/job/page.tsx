@@ -1,6 +1,5 @@
 import PageHeader from "@/components/Common/PageHeader/PageHeader";
 import JoinOurTeam from "@/components/Section/joinOurTeam";
-import React from "react";
 
 export default function Job() {
   return (

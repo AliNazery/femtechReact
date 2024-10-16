@@ -3,9 +3,9 @@ import PageHeader from "@/components/Common/PageHeader/PageHeader";
 import { IntegOneSvg, IntegTwoSvg } from "@/components/Common/PagesSvg";
 import Loader from "@/components/Common/Loader";
 import StudyHubModal from "@/components/Modals/StudyHubModal"; // Assuming the Modal component is in this path
-import { useGetStudyHubListQuery } from "@/Lib/features/apiSlice";
+import { useGetStudyHubListQuery } from "@/lib/features/apiSlice";
 import { toast } from "react-toastify";
-import { BASE_URL } from "@/Lib/config/constant";
+import { BASE_URL } from "@/lib/config/constant";
 import { StudyhubType } from "@/types/Index";
 import { Link } from "react-router-dom";
 

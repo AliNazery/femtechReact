@@ -1,6 +1,6 @@
 import React from "react";
 import { FooterIconOne, FooterIconThree, FooterIconTwo } from "../Common/Icons/footerIcon/FooterIcon";
-import { IMAGE_URL } from "../../Lib/config/constant";
+import { IMAGE_URL } from "../../lib/config/constant";
 
 const FooterBanner: React.FC = () => {
   return (

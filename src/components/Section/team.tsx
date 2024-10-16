@@ -4,7 +4,7 @@ import { TeamOneSvg, TeamTwoSvg } from "../Common/AboutSvg";
 import { LinkedinIcon } from "../Common/Icons/footerIcon/SocialIcon";
 
 import { teamMembers } from "./TemaData";
-import { IMAGE_URL } from "@/Lib/config/constant";
+import { IMAGE_URL } from "@/lib/config/constant";
 
 
 export default function Team() {

@@ -1,4 +1,4 @@
-import { useStoreSubscriberMutation } from "@/Lib/features/apiSlice";
+import { useStoreSubscriberMutation } from "@/lib/features/apiSlice";
 import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 
 

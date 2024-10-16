@@ -2,8 +2,8 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import Loader from "../Common/Loader";
 import Pagination from "../Common/Pagination";
+import { useGetEventListQuery } from "@/lib/features/apiSlice";
 import EventModal from "../Modals/EventsModal";
-import { useGetEventListQuery } from "@/Lib/features/apiSlice";
 
 const BaseURL = "https://femstech.wamasolution.com/public";
 
@@ -19,7 +19,7 @@ const Event = ({ page_num = 1 }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
 
-  const openModal = (event) => {
+  const openModal = (event:any) => {
     setSelectedEvent(event);
     setShowModal(true);
   };
@@ -55,7 +55,7 @@ const Event = ({ page_num = 1 }) => {
       <section className="section-md relative mt-[-28rem] py-[100px] md:py-[200px] overflow-hidden md:mt-[-32rem]">
         <div className="container relative z-30 px-4 sm:px-6">
           <div className="row gy-4 -mt-6">
-            {data.data.map((event, index) => (
+            {data.data.map((event:any, index:number) => (
               <div
                 key={index}
                 data-aos="fade-up-sm"

@@ -1,16 +1,13 @@
-"use client"
-
-import React from "react";
-import Image from "next/image";
 import PageHeader from "@/components/Common/PageHeader/PageHeader";
 import { IntegOneSvg, IntegTwoSvg } from "@/components/Common/PagesSvg";
-import { useGetAwardListQuery } from "@/lib/features/apiSlice"; // Ensure to import your hook
 import Loader from "@/components/Common/Loader";
-import toast from "react-hot-toast";
-import Link from "next/link";
+import {toast} from "react-toastify";
+import { useGetAwardListQuery } from "@/lib/features/apiSlice";
+import { Link } from "react-router-dom";
+
 
 export default function Awards() {
-  const { data, isLoading, isError } = useGetAwardListQuery({
+  const { data, isLoading, error } = useGetAwardListQuery({
     page_num: 1,
     page_size: 12,
     order_by: "id",
@@ -23,10 +20,10 @@ export default function Awards() {
   }
 
   // Handle error state
-  if (isError) {
-      toast.error("Failed to load awards. Please try again later");
-          
+  if (error) {
+      toast.error("Failed to load awards. Please try again later");      
   }
+  
 
   // Extract award data
   const awards = data?.data || [];
@@ -41,7 +38,7 @@ export default function Awards() {
       <section className="section-md relative mt-[-25rem] overflow-hidden md:mt-[-20rem] pb-40">
         <div className="container relative z-20">
           <div className="flex flex-wrap gap-6 mx-auto">
-            {awards.map((award) => (
+            {awards.map((award: any) => (
               <div
                 key={award.id}
                 data-aos="fade-up-sm"
@@ -49,7 +46,7 @@ export default function Awards() {
               >
                 <div className="shadow-default overflow-hidden rounded-xl bg-white p-8">
                   <div className="flex flex-wrap justify-between items-center">
-                    <Image
+                    <img
                       alt="Award Thumbnail"
                       loading="lazy"
                       width={120}
@@ -80,7 +77,7 @@ export default function Awards() {
                     Deadline: {award.deadline}
                   </p>
                   <Link
-                    href={`/awards/${award.id}`}
+                    to={`/awards/${award.id}`}
                     className="btn btn-outline-primary py-[10px] px-[15px] transition duration-300 hover:bg-blue-600"
                   >
                     <svg

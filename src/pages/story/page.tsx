@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { toast } from "react-toastify";
 import PageHeader from "@/components/Common/PageHeader/PageHeader";
-import { useGetStoryListQuery } from "@/Lib/features/apiSlice";
+import { useGetStoryListQuery } from "@/lib/features/apiSlice";
 import { StoryType } from "@/types/Index";
 
 export default function Story() {

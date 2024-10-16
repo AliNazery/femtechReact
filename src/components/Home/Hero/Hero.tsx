@@ -2,7 +2,7 @@ import { HeroOne, HeroTwo } from "../../Common/Icons/hero/hero1";
 import { CheckMarkSvg } from "../../Common/svg";
 import { items } from "./Data";
 import ConnectForm from "./ConnectForm";
-import { IMAGE_URL } from "@/Lib/config/constant";
+import { IMAGE_URL } from "@/lib/config/constant";
 
 
 export function Hero() {

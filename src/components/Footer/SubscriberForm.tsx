@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
-import { useStoreSubscriberMutation } from "../../Lib/features/apiSlice";
+import { useStoreSubscriberMutation } from "../../lib/features/apiSlice";
 
 // Define the expected payload type for the subscriber mutation
 interface SubscriberPayload {
@@ -11,7 +11,7 @@ interface SubscriberPayload {
 const SubscriberForm: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [showSuccessMessage, setShowSuccessMessage] = useState<boolean>(false);
-  const [storeSubscriber, { isLoading, isError, error }] =
+  const [storeSubscriber, { isLoading, isError }] =
     useStoreSubscriberMutation();
 
   // Handle form submission

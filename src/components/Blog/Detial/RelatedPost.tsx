@@ -1,6 +1,5 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { blogPosts } from "./blogPost";
-import Image from "next/image";
 
 export default function RelatedPost() {
     return (
@@ -26,9 +25,9 @@ export default function RelatedPost() {
                 <div className="shadow-default group min-h-full overflow-hidden rounded-xl bg-white">
                   <Link
                     className="inline-block h-full max-h-[270px] w-full overflow-hidden"
-                    href={post.postLink}
+                    to={post.postLink}
                   >
-                    <Image
+                    <img
                       alt="author"
                       loading="lazy"
                       width="408"
@@ -44,9 +43,9 @@ export default function RelatedPost() {
                       <Link
                         className="relative z-20 overflow-hidden rounded-full border-[6px] border-white"
                         title={post.authorName}
-                        href={post.authorLink}
+                        to={post.authorLink}
                       >
-                        <Image
+                        <img
                           alt={post.authorName}
                           loading="lazy"
                           width="40"
@@ -59,7 +58,7 @@ export default function RelatedPost() {
                       </Link>
                       <Link
                         className="relative z-10 -ml-3 rounded-r-3xl bg-theme-light py-1 pl-6 pr-3 font-primary text-[15px] capitalize text-dark transition-colors hover:text-opacity-70"
-                        href={post.authorLink}
+                        to={post.authorLink}
                       >
                         {post.authorName}
                       </Link>
@@ -67,7 +66,7 @@ export default function RelatedPost() {
                     <h2 className="mb-6 font-primary text-xl font-semibold capitalize text-dark sm:text-2xl">
                       <Link
                         className="link-animation relative after:absolute after:inset-0"
-                        href={post.postLink}
+                        to={post.postLink}
                       >
                         {post.postTitle}
                       </Link>

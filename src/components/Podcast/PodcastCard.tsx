@@ -1,7 +1,7 @@
 import { podcastEpisodes } from "./PodcastData";
 import { BlogIconOne, BlogIconTwo } from "../Common/Icons/BlogIcon/BlogIcon";
 import Pagination from "../Common/Pagination";
-import { IMAGE_URL } from "@/Lib/config/constant";
+import { IMAGE_URL } from "@/lib/config/constant";
 
 
 export default function PodcastCard({ page_num = 1 }) {

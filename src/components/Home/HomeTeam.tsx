@@ -1,5 +1,5 @@
 
-import { IMAGE_URL } from "@/Lib/config/constant";
+import { IMAGE_URL } from "@/lib/config/constant";
 import { TeamOneSvg, TeamTwoSvg } from "../Common/AboutSvg";
 import { HomeTeamMembers } from "../Section/TemaData"; 
 

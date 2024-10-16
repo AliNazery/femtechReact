@@ -1,5 +1,4 @@
-import React from "react";
-import { EligibleList, RulesList } from "./TermsData";
+
 
 export default function TermsContent() {
   return (

@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import React from 'react'
 import { upcomingChats } from './ChatsData';
 
 export default function UpcomingChats() {
@@ -9,7 +7,7 @@ export default function UpcomingChats() {
         <h2 className="text-2xl font-semibold mb-6">Upcoming Empower Chats</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {upcomingChats.map(
-            ({ id, title, description, date, speaker, link }) => (
+            ({ id, title, description, date, speaker }) => (
               <div
                 key={id}
                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"

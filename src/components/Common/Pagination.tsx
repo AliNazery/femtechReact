@@ -3,9 +3,10 @@ import {
   NextIcon,
   PreviousIcon,
 } from "@/components/Common/Icons/BlogIcon/NavigateIcon";
+import { PaginationType } from "@/types/Index";
 import { Link } from "react-router-dom";
 
-const Pagination = ({ currentPage, lastPage, pageRoute }) => {
+const Pagination = ({ currentPage, lastPage, pageRoute}:PaginationType) => {
   const prevPage = currentPage > 1 ? currentPage - 1 : null;
   const nextPage = currentPage < lastPage ? currentPage + 1 : null;
 

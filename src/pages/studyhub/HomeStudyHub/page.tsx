@@ -26,7 +26,7 @@ export default function Study() {
           </div>
         <div className="colored-box-icon flex flex-wrap -mt-6 -mx-3">
           {StudyData.map(
-            ({ id, delay, bgColor, icon, title, description, link }) => (
+            ({ id, delay, bgColor, icon, title, description }) => (
               <div
                 key={id}
                 data-aos="fade-up-sm"

@@ -5,7 +5,7 @@ import {
 } from "../Common/svg"; 
 import { testimonialsData } from "./Hero/testimonialsData"; 
 import SectionTitleTwo from "../Common/Title/SectionTitleTwo"; 
-import { IMAGE_URL } from "@/Lib/config/constant";
+import { IMAGE_URL } from "@/lib/config/constant";
 
 
 export default function Testimonials() {

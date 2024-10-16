@@ -4,7 +4,7 @@ import {
   FormIconTwo,
 } from "@/components/Common/Icons/ContactIcon/ContactIcon";
 import ContactEmail from "@/components/Contact/ContactEmail";
-import { useSubmitContactFormMutation } from '@/Lib/features/apiSlice';
+import { useSubmitContactFormMutation } from '@/lib/features/apiSlice';
 
 export default function ContactForm() {
   const {

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaceBookIcon, LinkedinIcon, SKypeIcon, TwitterIcon, YouTubeSvg } from "../Common/Icons/footerIcon/SocialIcon";
+import { FaceBookIcon, LinkedinIcon, TwitterIcon, YouTubeSvg } from "../Common/Icons/footerIcon/SocialIcon";
 
 export const socialLinks = [
   {

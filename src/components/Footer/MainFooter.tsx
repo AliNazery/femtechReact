@@ -1,7 +1,7 @@
 import React from "react";
 import { footerLinks, socialLinks, widgetLinks } from "./FooterData";
 import SubscriberForm from "./SubscriberForm";
-import { IMAGE_URL } from "../../Lib/config/constant";
+import { IMAGE_URL } from "../../lib/config/constant";
 
 const MainFooter: React.FC = () => {
   return (

@@ -1,20 +1,6 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  HeaderIconOne,
-  HeaderIconTwo,
-} from "@/components/Common/Icons/PageHeaderIcon/HeaderIcon";
-
-import {
-  BlogDetailOneSvg,
-  BlogDetailTwoSvg,
-} from "@/components/Common/BlogSvg";
-import RelatedPost from "@/components/Blog/Detial/RelatedPost";
 import { useGetSingleBlogQuery } from "@/lib/features/apiSlice";
-import { useParams } from "next/navigation";
 import Loader from "@/components/Common/Loader";
+import { Link, useParams } from "react-router-dom";
 
 export default function Detail() {
   const {id} = useParams();
@@ -36,7 +22,7 @@ export default function Detail() {
         <div className="container relative z-40">
           <div className="flex flex-wrap">
             <div className="w-full" data-aos="fade-up-sm">
-              <Image
+              <img
                 alt="featured-image"
                 loading="lazy"
                 width="1272"
@@ -67,9 +53,9 @@ export default function Detail() {
                   <Link
                     title="author image"
                     className="relative z-20 overflow-hidden rounded-full border-[6px] border-zinc-100"
-                    href="/images/blog/blogDetail"
+                    to="/images/blog/blogDetail"
                   >
-                    <Image
+                    <img
                       alt="Daniel Mitchell"
                       loading="lazy"
                       width="70"
@@ -82,7 +68,7 @@ export default function Detail() {
                   </Link>
                   <Link
                     className="relative z-10 -ml-3 rounded-r-3xl bg-theme-light py-1 pl-6 pr-3 font-primary text-[15px] capitalize text-dark transition-colors hover:text-opacity-70"
-                    href="/authors/benjamin"
+                    to="/authors/benjamin"
                   >
                     Hanifa
                   </Link>

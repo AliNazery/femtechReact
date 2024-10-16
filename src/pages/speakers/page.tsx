@@ -4,8 +4,8 @@ import { toast } from "react-toastify";
 import Loader from "@/components/Common/Loader";
 import Pagination from "@/components/Common/Pagination";
 import SpeakerModal from "@/components/Modals/SpeakerModal";
-import { useGetSpeakersListQuery } from "@/Lib/features/apiSlice";
-import { BASE_URL, IMAGE_URL } from "@/Lib/config/constant";
+import { useGetSpeakersListQuery } from "@/lib/features/apiSlice";
+import { BASE_URL, IMAGE_URL } from "@/lib/config/constant";
 import { SpeakerType } from "@/types/Index";
 
 export default function Speaders() {

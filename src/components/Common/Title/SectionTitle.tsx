@@ -1,6 +1,6 @@
-import React from "react";
+import { SectionTitleType } from '../../../types/Index';
 
-const SectionTitle = ({ category, title, description }) => {
+const SectionTitle = ({ category, title, description }:SectionTitleType) => {
   return (
     <div className="lg:w-8/12 xl:w-6/12 px-3">
       <span

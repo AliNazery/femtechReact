@@ -1,5 +1,5 @@
 
-import { IMAGE_URL } from "@/Lib/config/constant";
+import { IMAGE_URL } from "@/lib/config/constant";
 import { brandImages } from "../Hero/Data"; 
 
 

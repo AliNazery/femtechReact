@@ -30,3 +30,15 @@ export type SpeakerType = {
   lastname: string;
   created_at: string
 };
+
+export type PaginationType = {
+  currentPage: number;
+  lastPage: number
+  pageRoute: string
+};
+
+export type SectionTitleType = {
+  category: string;
+  title: string;
+  description: string;
+};

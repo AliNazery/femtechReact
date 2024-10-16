@@ -4,7 +4,7 @@ const Loader: React.FC = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="loader">
-        <style jsx>{`
+        <style >{`
           .loader {
             border: 8px solid #ececec;
             border-radius: 50%;

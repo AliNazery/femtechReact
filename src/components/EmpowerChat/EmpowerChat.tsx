@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTitle from "@/components/Common/Title/SectionTitle";
 import UpcomingChats from "./UpcomingChats";
 import PastChats from "./PastChats";

@@ -1,12 +1,10 @@
-import Image from "next/image";
-import React from "react";
 import { useGetCommentListQuery } from "@/lib/features/apiSlice";
 import { ReplySvg, SettingSvg } from "@/components/Common/svg";
 import SingleComment from "./SingleComment";
 import { toast } from "react-toastify";
 
 export default function Comment() {
-  const { data, isError, isLoading } = useGetCommentListQuery({
+  const { data, isError } = useGetCommentListQuery({
     page_num: 1,
     page_size: 12,
     order_by: "id",
@@ -57,7 +55,7 @@ export default function Comment() {
           <footer className="flex justify-between items-center mb-2">
             <div className="flex items-center">
               <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                <Image
+                <img
                   className="mr-2 w-6 h-6 rounded-full"
                   src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
                   alt="Michael Gough"
@@ -137,12 +135,12 @@ export default function Comment() {
           </div>
         </article>
         <article className="p-6 mb-3 ml-6 lg:ml-12 text-base bg-white rounded-lg dark:bg-gray-900">
-          {replies.map((reply) => (
+          {replies.map((reply : any) => (
             <>
               <footer className="flex justify-between items-center mb-2">
                 <div className="flex items-center">
                   <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                    <Image
+                    <img
                       className="mr-2 w-6 h-6 rounded-full"
                       src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                       alt="Jese Leos"

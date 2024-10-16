@@ -1,9 +1,7 @@
-import React from 'react'
-import Image from 'next/image';
 import { ReplySvg, SettingSvg } from '@/components/Common/svg';
 import { useGetSingleCommentQuery } from '@/lib/features/apiSlice';
+import { Link } from 'react-router-dom';
 import {toast } from 'react-toastify';
-import Link from 'next/link';
 
 export default function SingleComment() {
     const { data, isError, isLoading } = useGetSingleCommentQuery(1);
@@ -18,7 +16,7 @@ export default function SingleComment() {
         <footer className="flex justify-between items-center mb-2">
           <div className="flex items-center">
             <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-              <Image
+              <img
                 className="mr-2 w-6 h-6 rounded-full"
                 src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
                 alt="Bonnie Green"
@@ -101,7 +99,7 @@ export default function SingleComment() {
         <footer className="flex justify-between items-center mb-2">
           <div className="flex items-center">
             <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-              <Image
+              <img
                 className="mr-2 w-6 h-6 rounded-full"
                 src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
                 alt="Helene Engels"
@@ -147,7 +145,7 @@ export default function SingleComment() {
             >
               <li>
                 <Link
-                  href="#"
+                  to="#"
                   className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                 >
                   Edit
@@ -155,7 +153,7 @@ export default function SingleComment() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  to="#"
                   className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                 >
                   Remove
@@ -163,7 +161,7 @@ export default function SingleComment() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  to="#"
                   className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                 >
                   Report

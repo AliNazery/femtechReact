@@ -1,4 +1,4 @@
-import { BASE_URL } from "@/Lib/config/constant";
+import { BASE_URL } from "@/lib/config/constant";
 import React, { useEffect } from "react";
 
 interface SpeakerModalProps {

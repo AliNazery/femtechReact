@@ -126,10 +126,8 @@ export const CheckMarkSvg = () => {
   );
 };
 
-import exp from "constants";
 // Home page Features section / we are the ultimate
 
-import React from "react";
 export const FeatureOneSvg = () => {
   return (
     // <svg

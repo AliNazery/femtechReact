@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import React from 'react'
 import { pastChats } from './ChatsData';
 
 export default function PastChats() {
@@ -8,7 +6,7 @@ export default function PastChats() {
       <div className="container mx-auto mt-16 px-6">
         <h2 className="text-2xl font-semibold mb-6">Past Empower Chats</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {pastChats.map(({ id, title, description, link }) => (
+          {pastChats.map(({ id, title, description }) => (
             <div
               key={id}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"

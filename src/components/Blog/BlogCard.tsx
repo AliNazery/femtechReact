@@ -3,9 +3,9 @@ import { toast } from "react-toastify";
 import Loader from "../Common/Loader";
 import Pagination from "../Common/Pagination";
 import BlogModal from "@/components/Modals/BlogModal"; 
-import { useGetBlogListQuery } from "@/Lib/features/apiSlice";
+import { useGetBlogListQuery } from "@/lib/features/apiSlice";
 import { Link } from "react-router-dom";
-import { IMAGE_URL } from "@/Lib/config/constant";
+import { IMAGE_URL } from "@/lib/config/constant";
 import { PostType } from "@/types/Index";
 
 
