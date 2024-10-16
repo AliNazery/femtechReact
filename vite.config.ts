@@ -10,4 +10,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"), // This maps '@' to 'src' directory
     },
   },
+  build: {
+    outDir: "build", // Change the output directory if needed
+  },
 });

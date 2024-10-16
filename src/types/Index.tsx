@@ -21,3 +21,12 @@ export type StoryType = {
   description: string;
   content: string
 };
+
+
+export type SpeakerType = {
+  id: number;
+  profile: string;
+  firstname: string;
+  lastname: string;
+  created_at: string
+};

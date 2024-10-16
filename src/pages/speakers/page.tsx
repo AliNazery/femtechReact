@@ -6,6 +6,7 @@ import Pagination from "@/components/Common/Pagination";
 import SpeakerModal from "@/components/Modals/SpeakerModal";
 import { useGetSpeakersListQuery } from "@/Lib/features/apiSlice";
 import { BASE_URL, IMAGE_URL } from "@/Lib/config/constant";
+import { SpeakerType } from "@/types/Index";
 
 export default function Speaders() {
   const { data, isLoading, isError } = useGetSpeakersListQuery({
@@ -47,7 +48,7 @@ export default function Speaders() {
       <section className="section-md relative mt-[-25rem] overflow-hidden md:mt-[-25rem] pb-40">
         <div className="container relative z-20">
           <div className="row gy-4 -mt-6">
-            {speakers.map((speaker) => (
+            {speakers.map((speaker: SpeakerType) => (
               <div
                 key={speaker.id}
                 data-aos="fade-up-sm"
