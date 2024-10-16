@@ -7,13 +7,23 @@ export default function Study() {
   return (
     <section className="section features py-[60px] md:py-[100px] relative z-20 overflow-hidden after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:bg-bgo1Color after:content-[''] after:clip-path-feature-polygon">
       <div className="container relative z-30 px-4 sm:px-6">
-        <div className="row flex flex-wrap items-end justify-between pb-12">
-          <SectionTitle
-            category="Study Hub"
-            title="Enhancing Skills with Our Study Hub"
-            description="Explore upcoming sessions, courses, and webinars designed to empower women with cutting-edge tech knowledge and career-ready skills."
-          />
-        </div>
+        
+          <div className="row flex flex-wrap items-end justify-between pb-12">
+            <SectionTitle
+              category="Study Hub"
+              title="Enhancing Skills with Our Study Hub"
+              description="Explore upcoming sessions, courses, and webinars designed to empower women with cutting-edge tech knowledge and career-ready skills."
+            />
+          <div
+            data-aos="fade-right-sm"
+            data-aos-delay="150"
+            className="col-auto flex-none w-auto px-3 box-border max-w-full"
+          >
+            <Link to="/studyhub" className="btn-footer btn-primary btn-md">
+              View All 
+            </Link>
+          </div>
+          </div>
         <div className="colored-box-icon flex flex-wrap -mt-6 -mx-3">
           {StudyData.map(
             ({ id, delay, bgColor, icon, title, description, link }) => (
@@ -35,12 +45,12 @@ export default function Study() {
                     </h3>
                     <p className="text-base">{description}</p>
                   </div>
-                  <Link
+                  {/* <Link
                     to={link} 
                     className="inline-block mt-4 px-3 py-2 bg-pink text-white rounded-lg hover:bg-deepPink transition-all self-end"
                   >
-                    Learn More {/* Or "View Details" */}
-                  </Link>
+                    Learn More 
+                  </Link> */}
                 </div>
               </div>
             )

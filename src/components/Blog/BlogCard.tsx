@@ -6,15 +6,8 @@ import BlogModal from "@/components/Modals/BlogModal";
 import { useGetBlogListQuery } from "@/Lib/features/apiSlice";
 import { Link } from "react-router-dom";
 import { IMAGE_URL } from "@/Lib/config/constant";
+import { PostType } from "@/types/Index";
 
-
-type PostType = {
-  id: number;
-  thumbnail: string;
-  title: string;
-  user_id: number;
-  created_at: string
-};
 
 export default function BlogCard({ page_num = 1 }) {
   // Fetch the blog data using RTK Query

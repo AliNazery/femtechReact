@@ -45,7 +45,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
               width={250}
               height={250}
               decoding="async"
-              className="rounded-full mx-auto"
+              className="rounded-full mx-auto object-cover"
               src={BASE_URL + speaker.profile}
             />
           </div>

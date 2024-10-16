@@ -6,6 +6,8 @@ import StudyHubModal from "@/components/Modals/StudyHubModal"; // Assuming the M
 import { useGetStudyHubListQuery } from "@/Lib/features/apiSlice";
 import { toast } from "react-toastify";
 import { BASE_URL } from "@/Lib/config/constant";
+import { StudyhubType } from "@/types/Index";
+import { Link } from "react-router-dom";
 
 export default function StudyHub() {
   const { data, error, isLoading } = useGetStudyHubListQuery({
@@ -47,7 +49,7 @@ export default function StudyHub() {
             {studyHubData.length === 0 ? (
               <p>No study hubs available.</p>
             ) : (
-              studyHubData.map((hub) => (
+              studyHubData.map((hub : StudyhubType) => (
                 <div
                   key={hub.id}
                   data-aos="fade-up-sm"
@@ -66,7 +68,7 @@ export default function StudyHub() {
                     />
                     <div className="flex flex-col flex-grow justify-between mt-4">
                       <h3 className="mb-4 font-primary text-xl font-semibold text-dark sm:text-2xl">
-                        <a href={hub.media_url}>{hub.title}</a>
+                        <Link to={hub.media_url}>{hub.title}</Link>
                       </h3>
                       <p className="mb-4">{hub.description}</p>
                       <button

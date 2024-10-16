@@ -67,7 +67,7 @@ export default function Speaders() {
                       data-nimg="1"
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                       src={BASE_URL + speaker.profile}
-                                    />
+                    />
                   </div>
                   <div className="px-5 pb-12">
                     <div className="-mt-[30px] mb-3 flex items-center">
@@ -77,9 +77,8 @@ export default function Speaders() {
                         width="40"
                         height="40"
                         decoding="async"
-                        className="h-[40px] w-[40px] object-cover rounded-full"
+                        className="h-[40px] w-[40px] object-cover rounded-full z-20"
                         src={`${IMAGE_URL}/images/author/1.jpg`}
-                   
                       />
                       <span className="relative z-10 -ml-3 rounded-r-3xl bg-theme-light py-1 pl-6 pr-3 font-primary text-[15px] capitalize text-dark transition-colors hover:text-opacity-70">
                         {`${speaker.firstname} ${speaker.lastname}`}

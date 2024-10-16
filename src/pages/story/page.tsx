@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import { toast } from "react-toastify";
 import PageHeader from "@/components/Common/PageHeader/PageHeader";
 import { useGetStoryListQuery } from "@/Lib/features/apiSlice";
+import { StoryType } from "@/types/Index";
 
 export default function Story() {
   const { data, isLoading, isError } = useGetStoryListQuery({
@@ -78,7 +79,7 @@ export default function Story() {
               loop={true}
               autoplay={{ delay: 7000, disableOnInteraction: false }} // Move to next story every 7 seconds
             >
-              {stories.map((story) => (
+              {stories.map((story : StoryType) => (
                 <SwiperSlide key={story.id}>
                   <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
                     {/* Story Thumbnail */}
@@ -86,7 +87,6 @@ export default function Story() {
                       <img
                         src={story.thumbnail}
                         alt={story.title}
-                        fill
                         className="object-cover w-full h-full"
                       />
                     </div>

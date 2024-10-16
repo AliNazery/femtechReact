@@ -331,15 +331,15 @@ video {
     }
 
     .btn {
-        @apply inline-block whitespace-nowrap rounded-lg px-7 sm:py-[13px] text-[15px] font-semibold transition-colors duration-200
+        @apply inline-block whitespace-nowrap rounded-lg px-7 sm:py-[10px] text-[15px] font-semibold transition-colors duration-200
     }
 
     .btn-login {
-        @apply inline-block whitespace-nowrap rounded-lg px-[1.75rem] py-[13px] text-[15px] font-semibold transition-colors duration-200
+        @apply inline-block whitespace-nowrap rounded-lg px-[1.5rem] py-[10px] text-[15px] font-semibold transition-colors duration-200
     }
 
     .btn-footer {
-        @apply inline-block whitespace-nowrap rounded-lg px-10 xs:py-[13px] sm:py-[17px] text-[15px] font-semibold transition-colors duration-200
+        @apply inline-block whitespace-nowrap rounded-lg px-10 xs:py-[10px] sm:py-[17px] text-[15px] font-semibold transition-colors duration-200
     }
 
     /* .custom.btn{

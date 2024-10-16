@@ -1,5 +1,4 @@
 import { CoursesSvg, SessionsSvg, WebinarsSvg } from "@/components/Common/StudyHubSvg";
-import { link } from "fs";
 import React from "react";
 
 
@@ -20,7 +19,7 @@ export const StudyData = [
     icon: React.createElement(CoursesSvg),
     title: "Courses",
     description: `Comprehensive tech courses designed to empower women in tech.`,
-    link: "courses"
+    link: "/courses"
   },
   {
     id: 3,
@@ -29,6 +28,6 @@ export const StudyData = [
     icon: React.createElement(WebinarsSvg),
     title: "Webinars",
     description: ` Interactive webinars on the latest trends, emerging technologies, and essential skills in tech.`,
-    link: "webinars"
+    link: "/webinars"
   },
 ];
