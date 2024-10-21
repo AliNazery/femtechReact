@@ -1,6 +1,7 @@
 
 
 export default function NotFound() {
+
   return (
 <main>
     <section className="section py-40">

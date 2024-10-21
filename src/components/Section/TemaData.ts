@@ -15,7 +15,7 @@ export const teamMembers = [
   },
   {
     src: "/images/team/alham.jpeg",
-    name: "Alham Omar Hotaki, M.Sc.",
+    name: "Alham Omar Hotaki",
     role: "Program Director",
     linkedin: "https://www.linkedin.com/in/aohotaki/",
     delay: 150,

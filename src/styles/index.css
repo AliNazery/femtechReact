@@ -405,6 +405,11 @@ h6 {
     font-weight: inherit
 }
 
+
+h1{
+    color: #333 !important;
+}
+
 @layer base {
     a {
         @apply bg-transparent text-inherit no-underline

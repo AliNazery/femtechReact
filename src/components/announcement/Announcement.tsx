@@ -15,9 +15,9 @@ export default function Announcement() {
       <div className="sm:mx-auto px-4 md:text-15px xs:text-14px leading-6 xs:font-thin lg:px-10">
         <div className="relative flex items-center justify-between sm:text-center">
           <span className="mx-auto pr-10">
-            Join Fems Tech WorldWide for free courses that empower and inspire!
+            Join FemsTech WorldWide for free courses that empower and inspire!
             <a
-              href="#"
+              href="/about"
               className="underline underline-offset-2 xs:text-14px md:text-15px"
             >
               Learn More

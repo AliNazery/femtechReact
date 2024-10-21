@@ -1,9 +1,10 @@
 
 import { IMAGE_URL } from "@/lib/config/constant";
 import { TeamOneSvg, TeamTwoSvg } from "../Common/AboutSvg";
-import { HomeTeamMembers } from "../Section/TemaData"; 
+import { teamMembers } from "../Section/TemaData"; 
 
 import { Link } from "react-router-dom";
+import { LinkedinIcon } from "../Common/Icons/footerIcon/SocialIcon";
 
 export default function HomeTeam() {
   return (
@@ -46,7 +47,7 @@ export default function HomeTeam() {
             </div>
           </div>
           <div className="row gy-4 pt-16 -mt-6">
-            {HomeTeamMembers.map((member, index) => (
+            {teamMembers?.filter((_, i) => i < 5).map((member, index) => (
               <div
                 key={index}
                 data-aos="fade-up-sm"
@@ -65,14 +66,24 @@ export default function HomeTeam() {
                     />
                   </div>
                   <div className="px-5 py-8">
-                    <h3 className="mb-4 text-xl font-semibold text-dark sm:text-2xl">
+                    <h3 className="mb-4 text-xl font-semibold text-dark text-xl">
                       {member.name}
                     </h3>
                     <p>
-                      adipiscing cons cte tur dolor sit amet, cons cte tur
-                      dolorili
+                      {member?.role}
                     </p>
                     <ul className="social-icons-author mt-5 flex flex-wrap items-center gap-4 font-secondary text-dark">
+                    <li>
+                        <Link
+                          className="inline-block"
+                          aria-label="FaLinkedin"
+                          to={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                        >
+                          <LinkedinIcon />
+                        </Link>
+                      </li> 
                       {/* Uncomment and add valid links for social icons */}
                       {/* <li>
                         <Link

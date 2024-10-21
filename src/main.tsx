@@ -5,8 +5,8 @@ import "./styles/index.css"
 import ScrollToTop from './Util/routes/ScrollToTop.tsx'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { store } from './lib/store.ts'
 import Announcement from './components/announcement/Announcement.tsx'
+import { store } from './lib/store.ts'
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
