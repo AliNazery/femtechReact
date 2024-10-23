@@ -123,13 +123,6 @@ export const teamMembers = [
     delay: 550,
   },
   {
-    src: "/images/team/Caleb Bii.jpg",
-    name: "Caleb Bii",
-    role: "IT Team Member",
-    linkedin: "https://www.linkedin.com/in/caleb-kiprotich-bii-b141871a6/",
-    delay: 650,
-  },
-  {
     src: "/images/team/Parisa Sarwari.jpeg",
     name: "Parisa Sarwari",
     role: "IT Team Member",
